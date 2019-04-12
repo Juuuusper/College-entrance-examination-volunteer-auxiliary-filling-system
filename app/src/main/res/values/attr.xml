@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="toolbarColor" format="color"/>
+    <attr name="cardViewColor" format="color"/>
+    <attr name="cardViewTextSelColor" format="color"/>
+    <attr name="cardViewTextUnselColor" format="color"/>
+    <attr name="backgroundColor" format="color"/>
+    <attr name="navHeaderColor" format="color"/>
+    <attr name="navMenuTextColor" format="color"/>
+    <attr name="navMenuItemSelector" format="reference"/>
+
+    <attr name="navIcon" format="reference"/>
+    <attr name="navBackIcon" format="reference"/>
+    <attr name="overFlowIcon" format="reference"/>
+
+    <declare-styleable name="Banner">
+        <attr name="delay_time" format="integer" />
+        <attr name="scroll_time" format="integer" />
+        <attr name="is_auto_play" format="boolean" />
+        <attr name="title_background" format="color|reference" />
+        <attr name="title_textcolor" format="color" />
+        <attr name="title_textsize" format="dimension" />
+        <attr name="title_height" format="dimension" />
+        <attr name="indicator_width" format="dimension" />
+        <attr name="indicator_height" format="dimension" />
+        <attr name="indicator_margin" format="dimension" />
+        <attr name="indicator_drawable_selected" format="reference" />
+        <attr name="indicator_drawable_unselected" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group
+        android:id="@+id/group_home"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home">
+
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/group_common"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/menu_favorite"
+            android:icon="@drawable/ic_favorites"
+            android:title="@string/favorite"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/menu_about"
+            android:icon="@drawable/ic_about_us"
+            android:title="@string/about_us"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/menu_exit"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/exit"
+            app:showAsAction="ifRoom"
+            />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/orange_cute"
+    android:orientation="vertical">
+
+    <cn.carbs.android.avatarimageview.library.AvatarImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="5dp"
+        app:aiv_BoarderWidth="2dp"
+        app:aiv_ShowBoarder="true"
+        app:aiv_TextSizeRatio="0.4"
+        android:src="@drawable/welcomimg8" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/space_20"
+        android:text="Juuuuusper" />
+
+</LinearLayout>

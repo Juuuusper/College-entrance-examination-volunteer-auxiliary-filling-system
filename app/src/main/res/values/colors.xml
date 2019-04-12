@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffb300</color>
+    <color name="colorPrimaryDark">#2ea67f</color>
+    <color name="colorAccent">#2ea67f</color>
+
+    <color name="define">#2ea67f</color>
+
+    <color name="black">#dd000000</color>
+    <color name="white">#ffffffff</color>
+
+    <color name="loading_color">#fefd9a</color>
+
+    <color name="yellow_cute">#ffcc00</color>
+
+    <color name="orange_cute">#ffb300</color>
+
+
+    <color name="colorLightBlue">#0099FF</color>
+    <color name="colorLightGray">#E0E0E0</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDarkGray">#7E736B</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorlittleGray">#C7C7C7</color>
+    <color name="colorSplashBackground">#17181A</color>
+    <color name="colorDefination">#00FFFF</color>
+
+    <color name="colorDayPrimary">#00A2ED</color>
+    <color name="colorDayPrimaryDark">#008FD2</color>
+    <color name="colorDayAccent">#008FD2</color>
+    <color name="colorDayWindowBackground">#F3F3F3</color>
+    <color name="colorDayCardView">@color/colorWhite</color>
+    <color name="colorDayCardViewTextUnsel">@color/colorBlack</color>
+    <color name="colorDayCardViewTextSel">#B4B4B4</color>
+    <color name="colorDayNavHeader">@color/colorDayPrimary</color>
+    <color name="colorDayNavMenuUnsel">@color/colorWhite</color>
+    <color name="colorDayNavMenuSel">@color/colorLightGray</color>
+    <color name="colorDayNavMenuText">@color/colorWhite</color>
+
+
+    <color name="colorNightPrimary">#222222</color>
+    <color name="colorNightPrimaryDark">#1E1E1E</color>
+    <color name="colorNightAccent">#1E1E1E</color>
+    <color name="colorNightWindowBackground">#343434</color>
+    <color name="colorNightCardView">#404040</color>
+    <color name="colorNightCardViewTextUnsel">#E7E7E7</color>
+    <color name="colorNightCardViewTextSel">#838383</color>
+    <color name="colorNightNavHeader">#252525</color>
+    <color name="colorNightNavMenuUnsel">#343434</color>
+    <color name="colorNightNavMenuSel">#2C2C2C</color>
+    <color name="colorNightNavMenuText">#858585</color>
+
+    <color name="tab_gb">#F3F5F4</color>
+    <color name="tab_normal_color">#515051</color>
+    <color name="tab_selected_color">#D33D3C</color>
+
+    <color name="ind_red">#B30E17</color>
+    <color name="blue_light">#00C0E4</color>
+    <color name="material_orange">#ffEF6C00</color>
+
+    <color name="theme_primary">#2196F3</color>
+    <color name="theme_secondary_text_inverted">#8affffff</color>
+
+    <!--分类标题的背景颜色-->
+    <color name="common_class_color">#F3F3F5</color>
+    <!--通用的分割线的颜色-->
+    <color name="common_line_color">#F1F1F1</color>
+
+    <!--login&&reg-->
+    <color name="common_main_pink">#eb81b2</color>
+
+    <color name="divider">#D8D8D8</color>
+
+</resources>

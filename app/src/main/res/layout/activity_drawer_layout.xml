@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="vertical">
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <include
+                    android:id="@+id/toolbar1"
+                    layout="@layout/head_toolbar">
+                </include>
+
+            </android.support.design.widget.AppBarLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+            </android.support.v4.view.ViewPager>
+
+            <com.chaychan.library.BottomBarLayout
+                android:id="@+id/bbl"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@color/tab_gb"
+                app:smoothScroll="true"
+                >
+
+                <com.chaychan.library.BottomBarItem
+                    android:id="@+id/home"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    app:iconNormal="@drawable/ic_home"
+                    app:iconSelected="@drawable/ic_home_selected"
+                    app:itemText="@string/home"
+                    app:textColorNormal="@color/tab_normal_color"
+                    app:textColorSelected="@color/yellow_cute"
+                    app:itemTextSize="8sp"
+                    app:itemMarginTop="-5dp" />
+
+                <com.chaychan.library.BottomBarItem
+                    android:id="@+id/school"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    app:iconNormal="@drawable/ic_school"
+                    app:iconSelected="@drawable/ic_school_selected"
+                    app:itemText="@string/school"
+                    app:textColorNormal="@color/tab_normal_color"
+                    app:textColorSelected="@color/yellow_cute"
+                    app:itemTextSize="8sp"
+                    app:itemMarginTop="-5dp"
+                    />
+
+
+                <com.chaychan.library.BottomBarItem
+                    android:id="@+id/major"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    app:iconNormal="@drawable/ic_major"
+                    app:iconSelected="@drawable/ic_major_selected"
+                    app:itemText="@string/major"
+                    app:textColorNormal="@color/tab_normal_color"
+                    app:textColorSelected="@color/yellow_cute"
+                    app:itemTextSize="8sp"
+                    app:itemMarginTop="-5dp"
+                    />
+
+                <com.chaychan.library.BottomBarItem
+                    android:id="@+id/more"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    app:iconNormal="@drawable/ic_more"
+                    app:iconSelected="@drawable/ic_more_selected"
+                    app:itemText="@string/more"
+                    app:textColorNormal="@color/tab_normal_color"
+                    app:textColorSelected="@color/yellow_cute"
+                    app:itemTextSize="8sp"
+                    app:itemMarginTop="-5dp"
+                    />
+
+            </com.chaychan.library.BottomBarLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header_layout"
+        app:menu="@menu/navigation_menu">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

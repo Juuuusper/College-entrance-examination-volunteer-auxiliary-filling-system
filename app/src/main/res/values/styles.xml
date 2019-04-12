@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- set Can use Activity transitions -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="styleLoadingLayout">@style/LoadingLayoutStyle</item>
+    </style>
+
+    <style name="LoadingLayoutStyle" parent="LoadingLayout.Style">
+        <item name="llEmptyImage">@drawable/ic_content_empty</item>
+        <item name="llErrorImage">@drawable/ic_cloud_error</item>
+        ...
+    </style>
+
+    <style name="Translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">#0288D1</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+    <style name="TextLabel" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorControlActivated">#FFCC00</item>
+    </style>
+
+    <style name="Appwelcome" parent="android:Theme.Translucent.NoTitleBar.Fullscreen"></style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolBarStyle" parent="AppTheme">
+        <!--<item name="@android:textColorPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+
+        &lt;!&ndash; toolbar菜单文字的颜色 &ndash;&gt;
+        <item name="android:actionMenuTextColor">@color/white</item>-->
+    </style>
+
+    <style name="TabStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MaterialSearchViewStyle">
+        <!-- Background for the search bar -->
+        <item name="searchBackground">@color/theme_primary</item>
+
+        <!-- Change voice icon -->
+        <item name="searchVoiceIcon">@drawable/ic_action_voice_search_inverted</item>
+
+        <!-- Change clear text icon -->
+        <item name="searchCloseIcon">@drawable/ic_action_navigation_close_inverted</item>
+
+        <!-- Change up icon -->
+        <item name="searchBackIcon">@drawable/ic_action_navigation_arrow_back_inverted</item>
+
+        <!-- Change icon for the suggestions -->
+        <item name="searchSuggestionIcon">@drawable/ic_suggestion</item>
+
+        <!-- Change background for the suggestions list view -->
+        <item name="searchSuggestionBackground">@android:color/white</item>
+
+        <!-- Change text color for edit text. This will also be the color of the cursor -->
+        <item name="android:textColor">@color/white</item>
+
+        <!-- Change hint text color for edit text -->
+        <item name="android:textColorHint">@color/theme_secondary_text_inverted</item>
+
+        <!-- Hint for edit text -->
+        <item name="android:hint">@string/search_hint</item>
+    </style>
+
+    <!--<style name="PopButton" parent="Theme.AppCompat.Dialog">
+        <item name="@android:windowFrame">@null</item>
+        <item name="@android:windowNoTitle">true</item>
+        <item name="@android:windowBackGround">@android:color/white</item>
+        <item name="@android:windowFrame">@null</item>
+
+    </style>-->
+
+    <!--分割线-->
+    <style name="line_horizontal_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/common_line_color</item>
+    </style>
+
+    <declare-styleable name="LoadingLayout">
+        <!-- 空布局资源id -->
+        <attr name="llEmptyResId" format="reference"/>
+        <!-- 加载中布局资源id -->
+        <attr name="llLoadingResId" format="reference"/>
+        <!-- 错误布局资源id -->
+        <attr name="llErrorResId" format="reference"/>
+
+        <!-- 空布局图片 -->
+        <attr name="llEmptyImage" format="reference"/>
+        <!-- 空布局文本 -->
+        <attr name="llEmptyText" format="string"/>
+
+        <!-- 错误布局图片 -->
+        <attr name="llErrorImage" format="reference"/>
+        <!-- 错误布局文本 -->
+        <attr name="llErrorText" format="string"/>
+        <!-- 错误布局重试按钮文本 -->
+        <attr name="llRetryText" format="string"/>
+
+        <!-- 文本颜色 -->
+        <attr name="llTextColor" format="color"/>
+        <!-- 文本尺寸 -->
+        <attr name="llTextSize" format="dimension"/>
+
+        <!-- 按钮文本颜色 -->
+        <attr name="llButtonTextColor" format="color"/>
+        <!-- 按钮文本尺寸 -->
+        <attr name="llButtonTextSize" format="dimension"/>
+        <!-- 按钮背景 -->
+        <attr name="llButtonBackground" format="reference"/>
+    </declare-styleable>
+
+
+</resources>

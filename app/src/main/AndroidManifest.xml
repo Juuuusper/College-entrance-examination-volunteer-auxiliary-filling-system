@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.swufe.scoresforapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+
+        </activity>
+
+        <activity android:name=".Login.LoginOneActivity" />
+        <activity
+            android:name=".Login.LoginTwoActivity"
+            android:theme="@style/Translucent" />
+        <activity android:name=".Login.LoginThreeActivity" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Appwelcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WelcomeGuideActivity" />
+        <activity android:name=".NavigaViewActivity" />
+        <activity android:name=".DrawerLayoutActivity" />
+        <activity
+            android:name=".CollectionActivity"
+            android:parentActivityName=".DrawerLayoutActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DrawerLayoutActivity" />
+        </activity>
+        <!--<activity android:name=".FourMain.MainFragment" />
+        <activity android:name=".FourMain.SchoolFragment" />
+        <activity android:name=".FourMain.MajorFragment" />
+        <activity android:name=".FourMain.MoreFragment" />-->
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity
+            android:name=".ScrollingSchoolActivity"
+            android:label="@string/title_activity_scrolling_school"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScrollingCompareActivity"
+            android:label="@string/title_activity_scrolling_compare"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CompareActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

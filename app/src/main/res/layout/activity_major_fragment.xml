@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.swufe.scoresforapp.FourMain.MajorFragment">
+
+
+    <com.qlh.dropdownmenu.DropDownMenu
+        android:id="@+id/dropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dddividerColor="@color/divider"
+        app:ddmaskColor="@color/mask_color"
+        app:ddmenuBackgroundColor="@color/white"
+        app:ddmenuSelectedIcon="@drawable/ic_down"
+        app:ddmenuTextSize="@dimen/x40"
+        app:ddmenuUnselectedIcon="@drawable/ic_up"
+        app:ddtextSelectedColor="@color/colorAccent"
+        app:ddtextUnselectedColor="@color/drop_down_unselected"
+        app:ddunderlineColor="@color/divider"
+        app:ddIsUsePopMenuHeightPercent="true"
+        app:ddpopMenuHeightPercent="0.6"/>
+
+
+
+</LinearLayout>
